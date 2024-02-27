@@ -18,6 +18,7 @@ public class Buyer {
     public void makeOrder() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the ID of the beverage you want to order:");
+
         int id = scanner.nextInt();
 
         String query = "INSERT INTO orders (beverage_id) VALUES (?)";
